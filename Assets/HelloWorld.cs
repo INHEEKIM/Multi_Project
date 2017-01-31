@@ -9,6 +9,8 @@ public class HelloWorld : MonoBehaviour {
 	void Start () {
         cube = GameObject.Find("Cube");
         Debug.Log(cube.gameObject.name);
+
+        Debug.Log("hi");
     }
 	
 	// Update is called once per frame
@@ -16,4 +18,9 @@ public class HelloWorld : MonoBehaviour {
 
 	
 	}
+
+    public void click()
+    {
+
+    }
 }
