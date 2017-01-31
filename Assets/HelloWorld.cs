@@ -8,9 +8,10 @@ public class HelloWorld : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         cube = GameObject.Find("Cube");
-        Debug.Log(cube.gameObject.name);
-
         Debug.Log("hi");
+        Debug.Log("Bye");
+
+       
     }
 	
 	// Update is called once per frame
