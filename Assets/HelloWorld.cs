@@ -7,10 +7,9 @@ public class HelloWorld : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        cube = GameObject.Find("Cube");
-        Debug.Log("hi");
-        Debug.Log("Bye");
-
+        Debug.Log("Hi");
+        //StartCoroutine("click");
+        StartCoroutine(this.click());
        
     }
 	
@@ -20,8 +19,13 @@ public class HelloWorld : MonoBehaviour {
 	
 	}
 
-    public void click()
+    IEnumerator click()
     {
-
+        Debug.Log("before");
+        while (true) { 
+            yield return new WaitForSeconds(2.0f);
+            Debug.Log("after");
+        }
+        
     }
 }
